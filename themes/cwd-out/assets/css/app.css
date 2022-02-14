@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    /* font-family: 'Times New Roman', 'Cambria', 'Calibri', sans-serif, 'Arial Black'; */
+    font-family: "Cambria", "Garamond", "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color: rgb(138, 212, 255);
+}
+
+body{
+    box-sizing: border-box;
+    width:100vw;
+	font-size: 1.8rem;
+	letter-spacing: -0.015em;
+}
+
+header, footer{
+    height:100px;
+    width:100vw;
+    font-weight: bolder;
+    line-height:auto;
+    background-color: aliceblue;
+}
+
+a {
+	color: rgb(0, 68, 255);
+	text-decoration: underline;
+}
+
+.color-accent,
+.color-accent-hover:focus,
+.color-accent-hover:hover {
+	color: rgb(67, 117, 252);
+}
+
+.entry-content{
+	color: #fff;
+}
+
+@supports ( font-variation-settings: normal ) {
+
+	.has-drop-cap:not(:focus)::first-letter,
+	.entry-content .wp-block-archives,
+	.entry-content .wp-block-categories,
+	.entry-content .wp-block-latest-posts,
+	.entry-content .wp-block-latest-comments,
+	.entry-content .wp-block-cover-image p,
+	.entry-content .wp-block-pullquote {
+		font-family: "Inter var", "Cambria", "Garamond", "Helvetica Neue";
+	}
+}
+
+/* Mobile Views */
+
+@media print, screen and (max-width: 600px) {
+    .none{
+        display:none;
+    }
+}
+
+.hideAll {
+    display: none;
+}
