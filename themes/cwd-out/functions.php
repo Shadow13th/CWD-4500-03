@@ -111,7 +111,7 @@ function cwd_out_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar', 'cwd-out' ),
-			'id'            => 'sidebar-1',
+			'id'            => 'sidebar',
 			'description'   => esc_html__( 'Add widgets here.', 'cwd-out' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
