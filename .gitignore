@@ -17,6 +17,7 @@ upgrade
 
 # WordPress Plugin Folders
 plugins/current-template-file
+plugins/test
 
 # NPM Files/Folders
 node_modules
