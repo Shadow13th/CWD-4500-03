@@ -21,8 +21,8 @@
 			</a>
 			<span class="sep"> | </span>
 				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cwd-out' ), 'cwd-out', '<a href="https://adamswebsite.ca">Adam Niaraki</a>' );
+				/* translators: 1: Copyright, 2: Site. */
+				printf( esc_html__( 'Copyright: %1$s by %2$s.', 'cwd-out' ), '2022', '<a href=" ' . home_url() . ' ">CWD 4500 03</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
