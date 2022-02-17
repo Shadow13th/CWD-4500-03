@@ -16,7 +16,8 @@ body{
     box-sizing: border-box;
     width:100vw;
 	font-size: 1.8rem;
-	letter-spacing: -0.015em;
+    letter-spacing: -0.015em;
+    background-color: rgb(138, 212, 255);
 }
 
 header, footer{
