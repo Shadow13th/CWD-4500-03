@@ -136,7 +136,28 @@ function cwd_out_scripts() {
 	);
 
 	// Foundations 6.7.4
-	
+	wp_enqueue_style( 
+		'foundation-style', 
+		get_stylesheet_uri() . '/assets/css/vendor/foundation.css', 
+		array(), 
+		'6.7.4' 
+	);
+
+	wp_enqueue_script(
+		'what-input-script',
+		get_template_directory_uri() . '/assets/js/vendor/what-input.js',
+		array( 'jquery' ),
+		'5.2.10',
+		true
+	);
+
+	wp_enqueue_script(
+		'foundation-script',
+		get_template_directory_uri() . '/assets/js/vendor/foundation.js',
+		array( 'jquery', 'what-input-script' ),
+		'6.7.4',
+		true
+	);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
