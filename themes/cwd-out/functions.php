@@ -87,6 +87,8 @@ function cwd_out_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	add_theme_support( 'wp-block-styles' );
 }
 add_action( 'after_setup_theme', 'cwd_out_setup' );
 
@@ -126,7 +128,36 @@ add_action( 'widgets_init', 'cwd_out_widgets_init' );
  * Enqueue scripts and styles.
  */
 function cwd_out_scripts() {
-	wp_enqueue_style( 'cwd-out-style', get_stylesheet_uri(), array(), CWD_VERSION );
+	wp_enqueue_style( 
+		'cwd-out-style', 
+		get_stylesheet_uri(), 
+		array(), 
+		CWD_VERSION 
+	);
+
+	// Foundations 6.7.4
+	wp_enqueue_style( 
+		'foundation-style', 
+		get_template_uri() . '/assets/css/vendor/foundation.min.css', 
+		array(), 
+		'6.7.4' 
+	);
+
+	wp_enqueue_script(
+		'what-input-script',
+		get_template_uri() . '/assets/js/vendor/what-input.js',
+		array( 'jquery' ),
+		'5.2.10',
+		true
+	);
+
+	wp_enqueue_script(
+		'foundation-script',
+		get_template_uri() . '/assets/js/vendor/foundation.min.js',
+		array( 'jquery', 'what-input-script' ),
+		'6.7.4',
+		true
+	);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -148,3 +179,8 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Block Editor additions.
+ */
+require get_template_directory() . '/inc/block-editor.php';
