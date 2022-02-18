@@ -1,0 +1,12 @@
+/* .single-product .product {
+    display:flex;
+}
+
+.single-product .product > * {
+    flex-basis:100%;
+}
+
+.single-product .woocommerce-product-gallery,
+.single-product .entry-summary {
+    max-width:500px;
+} */

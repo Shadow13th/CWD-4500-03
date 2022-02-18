@@ -1,21 +1,21 @@
 .wp-block-quote {
-    color:blue;
+    color:#0000ff;
 }
 
 .wp-block-quote.is-style-fancy-quote {
     color:#008cff;
 }
 
-.entry-content > * {
+.entry-content > *:not(.woocommerce) {
     max-width:1000px;
     margin-left:auto;
     margin-right:auto;
 }
-
+.entry-content > *.alignwide ,
 .alignwide {
     max-width:1200px;
 }
-
+.entry-content > *.alignfull ,
 .alignfull {
     width:100%;
 }
@@ -57,9 +57,14 @@ footer > span, footer > .site-info{
 /* .wp-block-latest-comments{
     margin:2rem 2rem 0rem -2rem;
 } */
+/* Different class then intended but might change
+.wp-block-media-text{
+    background-color: #a7beff; or
+    background-color: #a7e7ff;
+} */
 
 .cover-header .entry-header * {
-	color: #4375fc;;
+	color: #4375fc;
 }
 
 #site-header {
@@ -141,7 +146,15 @@ strong {
 }
 
 .entry-content{
-	color: #fff;
+    /* color: #fff; */
+	color: #000000;
+    background-color: #ffffff;
+    padding:1rem 1rem;
+}
+
+.entry-summary{
+    padding: 1rem 1rem;
+    margin-bottom: 0rem;
 }
 
 .post-meta {

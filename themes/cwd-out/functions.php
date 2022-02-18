@@ -143,6 +143,11 @@ function cwd_out_scripts() {
 		'6.7.4' 
 	);
 
+	wp_enqueue_style( 
+		'woocommerce-style', 
+		get_stylesheet_uri() . '/assets/css/woocommerce.css', 
+	);
+
 	wp_enqueue_script(
 		'what-input-script',
 		get_template_directory_uri() . '/assets/js/vendor/what-input.js',
@@ -184,3 +189,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Block Editor additions.
  */
 require get_template_directory() . '/inc/block-editor.php';
+
+/**
+ * Woo Commerce additions.
+ */
+require get_template_directory() . '/inc/woocommerce.php';
