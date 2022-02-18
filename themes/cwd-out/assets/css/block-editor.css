@@ -3,14 +3,13 @@
 }
 
 .wp-block-quote.is-style-fancy-quote {
-    color:rgb(0, 140, 255);
+    color:#008cff;
 }
 
 .entry-content > * {
     max-width:1000px;
     margin-left:auto;
     margin-right:auto;
-
 }
 
 .alignwide {
@@ -19,4 +18,212 @@
 
 .alignfull {
     width:100%;
+}
+
+body{
+    box-sizing: border-box;
+    width:100vw;
+	font-size: 1.8rem;
+    letter-spacing: -0.015em;
+    background-color: #8ad4ff;
+}
+
+header, footer{
+    width:100vw;
+    font-weight: bolder;
+    line-height:auto;
+    background-color: #f0f8ff;
+    /* text-align: center; */
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    height:160px;
+    padding:0rem auto;
+}
+footer{
+    height:100px;
+    padding:1rem auto;
+}
+
+footer > span, footer > .site-info{
+    margin:2.0rem 0rem;
+}
+.wp-block-latest-comments__comment-meta {
+    padding:2rem 0rem 0rem 0rem;
+    margin:0rem 2rem 0rem -4rem;
+}
+/* .wp-block-latest-comments{
+    margin:2rem 2rem 0rem -2rem;
+} */
+
+.cover-header .entry-header * {
+	color: #4375fc;;
+}
+
+#site-header {
+	background: #f0f8ff;
+    position: relative;
+}
+
+.site-description {
+	margin-top: 1rem;
+	color: #1100ff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	display: none;
+	letter-spacing: -0.0311em;
+	transition: all 0.15s linear;
+}
+
+a {
+	color: #0044ff;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 0;
+}
+
+a:hover {
+    transform: scale(1.2);
+    color:#000000;
+    cursor: pointer;
+}
+
+#site-navigation {
+    display:flex;
+}
+.menu > ul{
+    /* margin: 0rem -2rem 0rem 2rem; */
+    display:flex;
+}
+.menu > ul > li{
+    margin: 0.5rem 2rem -0.5rem 2rem;
+}
+.menu > button {
+    height:100px;
+}
+
+time{
+    margin: 0 1rem;
+}
+aside{
+    padding:1rem 1.5rem;
+}
+
+b,
+strong {
+	font-weight: 950;
+}
+
+.color-accent,
+.color-accent-hover:focus,
+.color-accent-hover:hover {
+	color: #4375fc;
+}
+
+.bg-accent,
+.bg-accent-hover:focus,
+.bg-accent-hover:hover {
+	background-color: #55b2ff;
+}
+
+.fill-children-current-color,
+.fill-children-current-color * {
+	fill: currentColor;
+}
+
+/* Posts */
+
+.singular .entry-header {
+	background-color: #4375fc;
+	padding: 4rem 0;
+}
+
+.entry-content{
+	color: #fff;
+}
+
+.post-meta {
+	color: #465e7a;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.5rem;
+	font-weight: 600;
+	list-style: none;
+	margin: -1rem 0rem 0rem 0rem;
+}
+
+/* COLORS */
+
+:root .has-accent-color {
+	color: #269ecd;
+}
+
+:root .has-accent-background-color {
+	background-color: #269ecd;
+	color: #fff;
+}
+
+:root .has-secondary-color {
+	color: #46777a;
+}
+
+:root .has-secondary-background-color {
+	background-color: #375980;
+	color: #fff;
+}
+
+/* Fonts */
+
+.has-drop-cap:not(:focus)::first-letter,
+.entry-content .wp-block-archives,
+.entry-content .wp-block-categories,
+.entry-content .wp-block-cover-image,
+.entry-content .wp-block-latest-comments,
+.entry-content .wp-block-latest-posts,
+.entry-content .wp-block-pullquote,
+.entry-content .wp-block-quote.is-large,
+.entry-content .wp-block-quote.is-style-large {
+	font-family: "Cambria", "Garamond", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@supports ( font-variation-settings: normal ) {
+
+	.has-drop-cap:not(:focus)::first-letter,
+	.entry-content .wp-block-archives,
+	.entry-content .wp-block-categories,
+	.entry-content .wp-block-latest-posts,
+	.entry-content .wp-block-latest-comments,
+	.entry-content .wp-block-cover-image p,
+	.entry-content .wp-block-pullquote {
+		font-family: "Inter var", "Arial", "Cambria", "Garamond", "Helvetica Neue";
+	}
+}
+
+.widget-content cite,
+.widget-content figcaption,
+.widget-content .wp-caption-text {
+	font-family: "Cambria", "Garamond", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@supports ( font-variation-settings: normal ) {
+
+	.widget-content cite,
+	.widget-content figcaption,
+	.widget-content .wp-caption-text {
+		font-family: "Inter var", "Arial", "Cambria", "Garamond", "Helvetica Neue";
+	}
+}
+
+/* Mobile Views */
+
+@media print, screen and (max-width: 600px) {
+    .none{
+        display:none;
+    }
+}
+
+.hideAll {
+    display: none;
 }

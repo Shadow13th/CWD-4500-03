@@ -9,7 +9,7 @@ html {
     margin:0;
     padding:0;
     width:100%;
-    background-color: rgb(138, 212, 255);
+    /* background-color: rgb(138, 212, 255); */
 }
 
 body{
@@ -17,7 +17,7 @@ body{
     width:100vw;
 	font-size: 1.8rem;
     letter-spacing: -0.015em;
-    background-color: rgb(138, 212, 255);
+    background-color: #8ad4ff;
 }
 
 header, footer{
@@ -25,22 +25,121 @@ header, footer{
     width:100vw;
     font-weight: bolder;
     line-height:auto;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
+    /* padding:0 auto; */
+}
+
+.cover-header .entry-header * {
+	color: #4375fc;;
+}
+
+.wp-block-post-title{
+    background-color: #8ad4ff;
+}
+
+#site-header {
+	background: #f0f8ff;
+	position: relative;
+}
+
+.site-description {
+	margin-top: 1rem;
+	color: #1100ff;
+	font-size: 1.8rem;
+	font-weight: 600;
+	display: none;
+	letter-spacing: -0.0311em;
+	transition: all 0.15s linear;
 }
 
 a {
-	color: rgb(0, 68, 255);
-	text-decoration: underline;
+	color: #0044ff;
+    /* text-decoration: underline; */
+    font-weight: 900;
+    padding: 0;
+}
+
+a:hover {
+    transform: scale(1.2);
+    color:#000000;
+    cursor: pointer;
+}
+
+b,
+strong {
+	font-weight: 950;
 }
 
 .color-accent,
 .color-accent-hover:focus,
 .color-accent-hover:hover {
-	color: rgb(67, 117, 252);
+	color: #4375fc;
+}
+
+.bg-accent,
+.bg-accent-hover:focus,
+.bg-accent-hover:hover {
+	background-color: #55b2ff;
+}
+
+.fill-children-current-color,
+.fill-children-current-color * {
+	fill: currentColor;
+}
+
+/* Posts */
+
+.singular .entry-header {
+	background-color: #4375fc;
+	padding: 4rem 0;
 }
 
 .entry-content{
 	color: #fff;
+}
+
+.post-meta {
+	color: #465e7a;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.5rem;
+	font-weight: 600;
+	list-style: none;
+	margin: -1rem 0rem 0rem 0rem;
+}
+
+/* COLORS */
+
+:root .has-accent-color {
+	color: #269ecd;
+}
+
+:root .has-accent-background-color {
+	background-color: #269ecd;
+	color: #fff;
+}
+
+:root .has-secondary-color {
+	color: #46777a;
+}
+
+:root .has-secondary-background-color {
+	background-color: #375980;
+	color: #fff;
+}
+
+/* Fonts */
+
+.has-drop-cap:not(:focus)::first-letter,
+.entry-content .wp-block-archives,
+.entry-content .wp-block-categories,
+.entry-content .wp-block-cover-image,
+.entry-content .wp-block-latest-comments,
+.entry-content .wp-block-latest-posts,
+.entry-content .wp-block-pullquote,
+.entry-content .wp-block-quote.is-large,
+.entry-content .wp-block-quote.is-style-large {
+	font-family: "Cambria", "Garamond", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 @supports ( font-variation-settings: normal ) {
@@ -52,6 +151,21 @@ a {
 	.entry-content .wp-block-latest-comments,
 	.entry-content .wp-block-cover-image p,
 	.entry-content .wp-block-pullquote {
+		font-family: "Inter var", "Arial", "Cambria", "Garamond", "Helvetica Neue";
+	}
+}
+
+.widget-content cite,
+.widget-content figcaption,
+.widget-content .wp-caption-text {
+	font-family: "Cambria", "Garamond", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@supports ( font-variation-settings: normal ) {
+
+	.widget-content cite,
+	.widget-content figcaption,
+	.widget-content .wp-caption-text {
 		font-family: "Inter var", "Arial", "Cambria", "Garamond", "Helvetica Neue";
 	}
 }
