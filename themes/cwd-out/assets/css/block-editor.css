@@ -153,9 +153,11 @@ aside > section{
     width:100%;
 }
 .entry-title{
-    /* margin:6rem 0rem 3rem 0rem; */
+    margin:3rem 0rem 0.5rem 0rem;
 }
-
+#primary-menu > ul{
+    margin: 0.5rem 0rem;
+}
 
 .entry-summary{
     padding: 1rem 1rem;
