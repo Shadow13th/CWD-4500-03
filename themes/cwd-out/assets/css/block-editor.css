@@ -352,6 +352,9 @@ strong {
         font-size:20px;
         text-align:center;
     }
+    #colophon{
+        bottom:0;
+    }
 
 }
 
