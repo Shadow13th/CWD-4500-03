@@ -90,11 +90,8 @@ a:hover {
 .menu-toggle{
     display:none;
 }
-#primary-menu{
-    /* margin:-1.5rem 0rem 1rem 0rem; */
-}
+
 .menu > ul{
-    /* margin: 0rem -2rem 0rem 2rem; */
     display:flex;
 }
 .menu > ul > li{
@@ -113,9 +110,6 @@ aside{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
-}
-aside > section{
-
 }
 
 #block-2, #block-3{
@@ -285,6 +279,29 @@ strong {
     .none{
         display:none;
     }
+    .site-title{
+        font-weight:500;
+        margin:0.75rem auto 0.1rem auto;
+    }
+    .site-header{
+
+    }
+    /* .main-navigation{
+        max-width:100vw;
+    } */
+    #primary-menu{
+        max-width:50vw;
+        padding:0;
+        justify-content: center;
+        margin-bottom:10rem;
+    }
+    #primary-menu > ul{
+        /* margin:0 2rem 0 -2rem; */
+        padding:0;
+        /* flex-wrap: wrap; */
+        font-size:20px;
+    }
+
 }
 
 .hideAll {
