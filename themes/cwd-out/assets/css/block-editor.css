@@ -234,6 +234,14 @@ aside{
 	color: #fff;
 }
 
+.woocommerce ul.products li.product .onsale{
+    background-color: #0077ff;;
+}
+
+.woocommerce ul.products li.product .price{
+    color:#000000;
+}
+
 /* Fonts */
 
 b,
@@ -381,6 +389,16 @@ strong {
     }
     .page-id-2 > #page > #colophon{
         margin:130rem 0rem -130rem 0rem;
+    }
+    .page-id-25 > #page > #secondary{
+        /* Store is not viewing right on mobile */
+        /* margin:87rem 10rem -87rem -10rem; */
+        margin:97rem 0rem -97rem -0rem;
+        /* padding-top:18rem; */
+        width:85vw;
+    }
+    .page-id-25 > #page > #colophon{
+        margin:100rem 0rem -100rem 0rem;
     }
     .page-id-120 > #page > #secondary{
         margin:262rem 0rem -262rem 0rem;

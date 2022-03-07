@@ -10,17 +10,20 @@
 .single-product .entry-summary {
     max-width:500px;
 } */
+
+
 /* Tried the below but didn't work, check site later to see if it recieved the changes */
 .woocommerce > .products > .product > .price{
     color:#000000;
 }
+/* Works on the block editor */
+.woocommerce > .products > .product > .onsale{
+    background-color: #0077ff;;
+}
+.woocommerce ul.products li.product .onsale{
+    background-color: #0077ff;;
+}
 
-.woocommerce > .onsale{
-    background-color: #0077ff;;
-}
-.woocommerce span.onsale{
-    background-color: #0077ff;;
-}
 .nav-links{
     display:flex;
     justify-content: space-evenly;
