@@ -25,9 +25,13 @@ header, footer{
     flex-wrap: wrap;
 }
 header{
-    height:160px;
-    padding:0rem auto;
+    height:auto;
+    padding:0.5rem auto;
 }
+/* Adjust below so the height of the headers is more in line with the content */
+/* .home > .site > header{
+    height:160px;
+} */
 .top-space{
     margin-top:2rem;
 }
@@ -146,8 +150,14 @@ aside{
 .alignfull {
     width:100%;
 }
+.home > #page > #primary > #post-1 > .entry-header > .entry-title{
+    margin:3rem 0rem 1.0rem 0rem;
+}
+.home > #page > #primary > #post-1 > .entry-header > .entry-meta{
+    margin-bottom:1rem;
+}
 .entry-title{
-    margin:3rem 0rem 0.5rem 0rem;
+    margin:1rem 0rem 1.5rem 0rem;
 }
 #primary-menu > ul{
     margin: 0.5rem 0rem;
@@ -338,8 +348,11 @@ strong {
     .site-header, .site-main{
         height:160px;
     }
+    .home > #page > #primary > #post-1 > .entry-header > .entry-title{
+        margin:2rem 0rem 1.0rem 0rem;
+    }
     .entry-title{
-        margin:0;
+        margin:0rem 0rem 1rem 0rem;
         text-align: center;
     }
     .entry-meta{
