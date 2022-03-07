@@ -360,11 +360,36 @@ strong {
         font-size:20px;
         text-align:center;
     }
-    #colophon{
-        bottom:0;
-    }
     .wp-block-search{
         width:80vw;
+    }
+    #secondary{
+        text-align:center;
+        /* Below isn't working */
+        /* bottom:0; */
+    }
+    .home > #page > #secondary{
+        margin:63rem 0rem -63rem 0rem;
+    }
+    .home > #page > #colophon{
+        margin:66rem 0rem -66rem 0rem;
+        /* Below isn't working */
+        /* bottom:0; */
+    }
+    .page-id-2 > #page > #secondary{
+        margin:127rem 0rem -127rem 0rem;
+    }
+    .page-id-2 > #page > #colophon{
+        margin:130rem 0rem -130rem 0rem;
+    }
+    .page-id-120 > #page > #secondary{
+        margin:262rem 0rem -262rem 0rem;
+    }
+    .page-id-120 > #page > #colophon{
+        margin:265rem 0rem -265rem 0rem;
+    }
+    #block-4 > div > h2{
+        margin:0;
     }
 
 }
