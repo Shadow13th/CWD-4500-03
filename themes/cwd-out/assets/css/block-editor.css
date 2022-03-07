@@ -363,6 +363,9 @@ strong {
     #colophon{
         bottom:0;
     }
+    .wp-block-search{
+        width:80vw;
+    }
 
 }
 
