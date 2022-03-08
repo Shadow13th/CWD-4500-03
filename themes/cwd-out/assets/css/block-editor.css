@@ -203,7 +203,16 @@ aside{
     font-size:20px;
 }
 .book-review-block__description > p{
+    width:170px;
+    height:40px;
+    margin:0.5rem 0rem;
     font-size:16px;
+    text-overflow: initial;
+    overflow: scroll;
+}
+.book-review-block__description{
+    /* text-overflow: initial; */
+    overflow: scroll;
 }
 
 
