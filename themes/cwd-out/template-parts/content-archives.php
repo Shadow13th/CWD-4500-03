@@ -7,7 +7,7 @@
 <?php
 $how_many_last_posts = intval(get_post_meta($post->ID, 'archived-posts-no', true));
 
-/* Make sure that the number fetched is reasonable. If higher than 200 or lower than 2, we're resetting to the default value of 15. */
+/* Make sure that posts number is reasonable. If higher than 200 or lower than 2, we're resetting to the default value of 15. */
 if($how_many_last_posts > 200 || $how_many_last_posts < 2) $how_many_last_posts = 15;
 
 $my_query = new WP_Query('post_type=post&nopaging=1');
