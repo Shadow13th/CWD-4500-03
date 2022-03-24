@@ -54,7 +54,21 @@
 					'theme_location' => 'menu-primary',
 					'menu_id'        => 'primary-menu',
 					'container'		=> false,
+					'container'     => 'div',
+					// 'container_class'      => 'myNav',
+    				// 'container_id'         => '',
+					// 'tag' => 'p',
+					// 'menu' => 'primary',
+    				// 'link_before' => '<span class="screen-reader-text">',
+    				// 'link_after' => '</span>',
 				)
+	// 		$args = wp_parse_args( $args, $defaults );
+    // if ( ! in_array( $args['item_spacing'], array( 'preserve', 'discard' ), true ) ) {
+    //     // Invalid value, fall back to default.
+    //     $args['item_spacing'] = $defaults['item_spacing'];
+	// }
+	// 	$args = apply_filters( 'wp_nav_menu_args', $args );
+    // 	$args = (object) $args;
 			);
 		// }
 			?>

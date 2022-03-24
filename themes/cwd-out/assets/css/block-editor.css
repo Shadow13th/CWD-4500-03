@@ -219,6 +219,13 @@ aside{
     overflow: scroll;
 }
 
+.menu > ul{
+    list-style-type:none;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+}
+
 
 /* COLORS */
 
