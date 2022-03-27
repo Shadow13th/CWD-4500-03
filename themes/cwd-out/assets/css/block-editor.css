@@ -28,6 +28,21 @@ header{
     height:auto;
     padding:0.5rem auto;
 }
+.site-branding{
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+.site-title{
+    margin:4rem 0.5rem;
+    /* line-height: 5rem; */
+    float:left;
+}
+.custom-logo{
+    width:20%;
+    margin:1rem 0rem;
+    float:left;
+}
 /* Adjust below so the height of the headers is more in line with the content */
 /* .home > .site > header{
     height:160px;
@@ -316,6 +331,9 @@ strong {
 }
 /*  */
 @media print, screen and (max-width: 1000px) {
+    .entry-header{
+        margin-top:-2rem;
+    }
     .entry-title{
         margin:0.5rem 0rem -0.5rem 0rem;
         text-align: center;
@@ -354,12 +372,22 @@ strong {
     .none{
         display:none;
     }
+    .site-branding{
+        padding:0.5rem 0.5rem;
+    }
+    .custom-logo{
+        width:15%;
+        /* margin-right:-1rem; */
+    }
     .site-title{
         text-align: center;
-        width:100vw;
-        font-size:44px;
+        width:80vw;
+        font-size:40px;
         font-weight:500;
-        margin:0.75rem auto 0.1rem auto;
+        margin:0.9rem auto 0.1rem auto;
+    }
+    .entry-header{
+        margin-top:0rem;
     }
     .site-header, .site-main{
         height:160px;
