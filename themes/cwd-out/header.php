@@ -39,6 +39,15 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
+			if ( is_user_logged_in() ):
+				?>
+				<p class="welcome">Welcome, registered user!</p>
+				<?php
+			else:
+				?>
+				<p class="welcome">Welcome!</p>
+				<?php
+			endif;
 			$cwd_out_description = get_bloginfo( 'description', 'display' );
 			if ( $cwd_out_description || is_customize_preview() ) :
 				?>
