@@ -41,11 +41,11 @@
 			endif;
 			if ( is_user_logged_in() ):
 				?>
-				<p class="welcome">Welcome, registered user!</p>
+				<p class="welcome">Hello, registered user!</p>
 				<?php
 			else:
 				?>
-				<p class="welcome">Welcome!</p>
+				<p class="welcome"></p>
 				<?php
 			endif;
 			$cwd_out_description = get_bloginfo( 'description', 'display' );

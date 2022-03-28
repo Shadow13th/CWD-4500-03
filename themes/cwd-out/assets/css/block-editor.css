@@ -66,6 +66,9 @@ footer{
 footer > span, footer > .site-info{
     margin:2.0rem 0rem;
 }
+.login{
+    margin:0 0.5rem;
+}
 .wp-block-latest-comments__comment-meta {
     padding:2rem 0rem 0rem 0rem;
     margin:0rem 1rem 0rem -1rem;

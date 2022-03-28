@@ -24,6 +24,16 @@
 				/* translators: 1: Copyright, 2: Site. */
 				printf( esc_html__( 'Copyright: %1$s by %2$s.', 'cwd-out' ), '2022', '<a href=" ' . home_url() . ' ">The Online Bookshelf</a>' );
 				?>
+				<?php
+			if ( is_user_logged_in() ) :
+				?>
+				<a class="login" href="<?php echo esc_url( home_url( '/my-account' ) ); ?>" rel="account">(Log Out)</a>
+				<?php
+			else :
+				?>
+				<a class="login" href="<?php echo esc_url( home_url( '/my-account' ) ); ?>" rel="account">(Log In)</a>
+				<?php
+			endif; ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
