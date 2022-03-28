@@ -1,0 +1,81 @@
+@import 'deprecated/style.scss';
+
+.book-review-block {
+	overflow: hidden;
+
+	&.has-background {
+		padding: 20px 20px;
+	}
+
+	.wp-block-image {
+		margin: 0;
+
+		.alignleft,
+		.alignright {
+			margin: 0;
+			margin-bottom: 1em;
+		}
+
+		.alignleft {
+			margin-right: 1em;
+		}
+
+		.alignright {
+			margin-left: 1em;
+		}
+
+		.aligncenter {
+			margin-bottom: 1em;
+		}
+	}
+
+	// TODO: alignwide and alignfull are now styled the same, when in fact alignwide should have a bit
+	// of margin (at least on Twenty Twenty theme). This is not a huge deal though.
+	.alignwide,
+	.alignfull,
+	// Align none
+	.wp-block-image:not(.alignwide):not(.alignfull) {
+		margin-bottom: 1em;
+	}
+}
+
+/**
+ * Meta
+ */
+.book-review-block__meta-item-label {
+	font-weight: 700;
+	margin-right: 5px;
+}
+
+.book-review-block__meta-item-value {
+	display: inline;
+}
+
+/**
+ * Rating
+ */
+.book-review-block__rating-button {
+	margin-right: 0.3em;
+}
+
+// There are two stars in every whole star, but they should be cropped as halves.
+.book-review-block__rating-button span {
+	display: inline-flex;
+	overflow: hidden;
+	width: 12px;
+}
+
+.book-review-block__rating-button span svg {
+	flex-shrink: 0;
+	max-width: none; // Fix for Twenty Twenty.
+}
+
+// Tweak 2nd half of star.
+.book-review-block__rating-button span:nth-child(even) {
+	justify-content: flex-end;
+}
+
+.book-review-block__rating-button .is-rating-unfilled {
+	fill-opacity: 0;
+	stroke-width: 2px;
+}
