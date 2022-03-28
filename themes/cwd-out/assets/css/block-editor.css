@@ -279,6 +279,21 @@ aside{
 .woocommerce ul.products li.product .onsale{
     background-color: #0077ff;;
 }
+.woocommerce span.onsale{
+    background-color: #0077ff;;
+}
+.woocommerce > .onsale{
+    background-color: #0077ff;;
+}
+.woocommerce > span.onsale{
+    background-color: #0077ff;;
+}
+.single_add_to_cart_button{
+    background-color:#269ecd;
+}
+.woocommerce button.button{
+    background-color:#269ecd;
+}
 
 .woocommerce ul.products li.product .price{
     color:#000000;
