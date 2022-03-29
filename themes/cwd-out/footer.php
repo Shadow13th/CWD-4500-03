@@ -18,9 +18,9 @@
 		);
 		$recipe_query = new WP_Query( $recipe_args );
 
-		if( $recipe_query => have_posts() ) {
-			while ( $recipe_query => have_posts() ) {
-				$recipe_query => the_post();
+		if( $recipe_query -> have_posts() ) {
+			while ( $recipe_query -> have_posts() ) {
+				$recipe_query -> the_post();
 				the_post_thumbnail();
 				the_title( '<h3>', '</h3>' );
 				the_excerpt();
