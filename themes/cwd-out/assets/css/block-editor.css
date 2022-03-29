@@ -102,6 +102,9 @@ footer > .grid-container > div > div > .attachment-post-thumbnail{
 	background: #f0f8ff;
     position: relative;
 }
+.site-main > article > .post-thumbnail{
+    text-align: center;
+}
 .main-navigation{
     margin-bottom:1rem;
 }
