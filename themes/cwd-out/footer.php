@@ -12,6 +12,23 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<?php
+		$recipe_args = array(
+
+		);
+		$recipe_query = new WP_Query( $recipe_args );
+
+		if( $recipe_query => have_posts() ) {
+			while ( $recipe_query => have_posts() ) {
+				$recipe_query => the_post();
+				the_post_thumbnail();
+				the_title( '<h3>', '</h3>' );
+				the_excerpt();
+			}
+			wp_reset_postdata();
+		}
+		?>
+	
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cwd-out' ) ); ?>">
 				<?php
