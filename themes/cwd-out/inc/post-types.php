@@ -6,6 +6,7 @@
  *
  * @package winter
  */
+
 function cwd_post_types() {
     $labels = array(
         'name'                  => _x( 'Recipes', 'Post type general name', 'cwd' ),
