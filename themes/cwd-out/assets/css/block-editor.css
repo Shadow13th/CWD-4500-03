@@ -523,6 +523,13 @@ strong {
     #block-4 > div > h2{
         margin:0;
     }
+    footer > .grid-container > div{
+        flex-wrap: wrap;
+    }
+    footer > .grid-container > div > div, footer > .grid-container > div > div > .attachment-post-thumbnail{
+        width:100%;
+        float:none;
+    }
 
 }
 
