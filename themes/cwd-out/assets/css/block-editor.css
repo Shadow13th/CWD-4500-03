@@ -53,18 +53,38 @@ header{
     font-size: 24px;
     justify-content: center;
 }
-/* Adjust below so the height of the headers is more in line with the content */
+/* Adjust below so the height of the headers & tags is more in line with the content */
 
 .top-space{
     margin-top:2rem;
 }
 footer{
-    height:100px;
+    /* height:100px; */
     padding:1rem auto;
 }
 
 footer > span, footer > .site-info{
     margin:2.0rem 0rem;
+}
+footer > .grid-container > div{
+    /* text-align: center; */
+    display:flex;
+    justify-content: center;
+}
+footer > .grid-container > div > div{
+    margin: 0 1rem;
+}
+footer > .grid-container > div > div, footer > .grid-container > div > div > .attachment-post-thumbnail{
+    width:30%;
+    float:left;
+}
+footer > .grid-container > div > div > .attachment-post-thumbnail{
+    width:30%;
+    float:none;
+    /* display: flex; */
+    justify-self: center;
+    text-align: center;
+    /* margin:1rem 6rem; */
 }
 .login{
     margin:0 0.5rem;
