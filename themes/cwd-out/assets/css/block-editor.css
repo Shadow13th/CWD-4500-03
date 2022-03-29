@@ -449,7 +449,10 @@ strong {
     .entry-header{
         margin-top:0rem;
     }
-    .site-header, .site-main{
+    .site-header{
+        height:220px;
+    } 
+    .site-main{
         height:160px;
     }
     .home > #page > #primary > #post-1 > .entry-header > .entry-title{
@@ -463,6 +466,9 @@ strong {
         text-align: center;
         padding:0rem 0.5rem;
         font-size: 20px;
+    }
+    .site-main > article > .entry-header {
+        margin-top:3rem;
     }
     .menu-menu-1-container{
         max-width:50vw;
@@ -481,10 +487,6 @@ strong {
         margin:0rem 1rem;
         float:left;
     }
-    footer{
-        font-size:20px;
-        text-align:center;
-    }
     .wp-block-search{
         width:80vw;
     }
@@ -501,11 +503,38 @@ strong {
         /* Below isn't working */
         /* bottom:0; */
     }
+    .postid-256 > #page > #secondary{
+        margin:177rem 0rem -177rem 0rem;
+    }
+    .postid-256 > #page > #colophon{
+        margin:180rem 0rem -180rem 0rem;
+    }
+    .postid-259 > #page > #secondary{
+        margin:138rem 0rem -138rem 0rem;
+    }
+    .postid-259 > #page > #colophon{
+        margin:140rem 0rem -140rem 0rem;
+    }
+    .postid-269 > #page > #secondary{
+        margin:88rem 0rem -88rem 0rem;
+    }
+    .postid-269 > #page > #colophon{
+        margin:90rem 0rem -90rem 0rem;
+    }
+    .postid-280 > #page > #secondary{
+        margin:164rem 0rem -164rem 0rem;
+    }
+    .postid-280 > #page > #colophon{
+        margin:170rem 0rem -170rem 0rem;
+    }
     .page-id-2 > #page > #secondary{
         margin:127rem 0rem -127rem 0rem;
     }
     .page-id-2 > #page > #colophon{
         margin:130rem 0rem -130rem 0rem;
+    }
+    .page-id-3 > #page > #colophon{
+        margin:370rem 0rem -370rem 0rem;
     }
     .page-id-25 > #page > #secondary{
         /* Store is not viewing right on mobile */
@@ -517,11 +546,20 @@ strong {
     .page-id-25 > #page > #colophon{
         margin:100rem 0rem -100rem 0rem;
     }
+    .page-id-26 > #page > #colophon{
+        margin:40rem 0rem -40rem 0rem;
+    }
+    .page-id-112 > #page > #colophon{
+        margin:35rem 0rem -35rem 0rem;
+    }
     .page-id-120 > #page > #secondary{
         margin:262rem 0rem -262rem 0rem;
     }
     .page-id-120 > #page > #colophon{
         margin:265rem 0rem -265rem 0rem;
+    }
+    .page-id-189 > #page > #colophon{
+        margin:3140rem 0rem -3140rem 0rem;
     }
     #block-4 > div > h2{
         margin:0;
@@ -532,6 +570,11 @@ strong {
     footer > .grid-container > div > div, footer > .grid-container > div > div > .attachment-post-thumbnail{
         width:100%;
         float:none;
+    }
+    footer{
+        /* height:100px; */
+        font-size:20px;
+        text-align:center;
     }
 
 }
